@@ -1,16 +1,10 @@
-#ifndef LINE_INTERSECTION_H_INCLUDED
-#define LINE_INTERSECTION_H_INCLUDED
+#ifndef LINE_INTERSECTION_FUNCTION_H_INCLUDED
+#define LINE_INTERSECTION_FUNCTION_H_INCLUDED
 
-struct Point{
-    float x;
-    float y;
-};
+#include "line_intersection_struct.h"
 
-// y = kx + b
-struct Line{
-    float k;
-    float b;
-};
+bool Parallel (const Line& l1, const Line& l2) {}
+bool Same (const Line& l1, const Line& l2) {}
+Point Intersection_point (const Line& l1, const Line& l2) {}
 
-
-#endif // LINE_INTERSECTION_H_INCLUDED
+#endif // LINE_INTERSECTION_FUNCTION_H_INCLUDED
