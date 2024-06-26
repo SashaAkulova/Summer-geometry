@@ -8,7 +8,7 @@
 
 
 
-float Point_intersection (const Line& l1, const Line& l2) {
+float Lines_intersection (const Line& l1, const Line& l2) {
     //Point res;
     Vector r = l2.r0 - l1.r0;
     const float det  = determinant(l1.a, -l2.a);
@@ -26,9 +26,9 @@ float Point_intersection (const Line& l1, const Line& l2) {
     }
 
     if(det = 0) {
-        return 0;
+        return nullptr;
     }
 
-    return t1;
+    return  std::pair<t1, t2>;
 
 }
