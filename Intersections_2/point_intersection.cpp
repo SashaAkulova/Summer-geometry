@@ -11,8 +11,8 @@
 float Point_intersection (const Line& l1, const Line& l2) {
     //Point res;
     Vector r = l2.r0 - l1.r0;
-    const float det  = determinant(l1.a, l2.a);
-    const float det1 = determinant(r, l2.a);
+    const float det  = determinant(l1.a, -l2.a);
+    const float det1 = determinant(r, -l2.a);
     const float det2 = determinant(l1.a, r);
 
     const float t1 = det1 / det;
