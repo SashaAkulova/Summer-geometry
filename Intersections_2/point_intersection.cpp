@@ -1,6 +1,6 @@
 #include "Point.h"
 #include "Vector.h"
-#include "Triangle.h"
+#include "Line.h"
 #include "Determinant.h"
 #include "Point_intersection.h"
 #include<limits>
