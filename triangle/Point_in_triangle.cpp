@@ -1,12 +1,8 @@
-#include "Point_struct.h"
-#include "Vector_struct.h"
-#include "Triangle_struct.h"
-#include "Determinant_function.h"
+#include "Point.h"
+#include "Vector.h"
+#include "Triangle.h"
+#include "Determinant.h"
 #include "Point_in_triangle.h"
-
-Vector operator-(const Point& point1, const Point& point2){
-    return {point1.x - point2.x, point1.y - point2.y};
-}
 
 
 bool point_in_triangle(const Point& point, const Triangle& traingle) {
