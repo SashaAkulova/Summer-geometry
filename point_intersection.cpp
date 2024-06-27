@@ -4,6 +4,7 @@
 #include "Determinant.h"
 #include "Point_intersection.h"
 #include<limits>
+#include <cmath>
 
 
 
@@ -22,11 +23,11 @@ float Lines_intersection (const Line& l1, const Line& l2) {
     //res.y = l1.r0.y + l1.a.y * t1;
 
     if(det == 0 && det1 == 0 || det == 0 && det2 == 0) {
-        return numeric_limits<float>::infinity();
+        return  std::numeric_limits<float>::infinity();
     }
 
     if(det = 0) {
-        return nullptr;
+        return  std::numeric_limits<float>::quiet_NaN();
     }
 
     return  std::pair<t1, t2>;
